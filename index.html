@@ -24,9 +24,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;600;700&family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..600&display=swap" rel="stylesheet">
 
-<link rel="preload" as="image" type="image/webp"
-  imagesrcset="img/marlizete-consultorio-480.webp 480w, img/marlizete-consultorio-960.webp 960w, img/marlizete-consultorio-1400.webp 1400w"
-  imagesizes="(min-width: 900px) 400px, 72vw">
+<link rel="preload" as="image" type="image/webp" href="img/marlizete-abertura-343.webp">
 
 <script type="application/ld+json">
 {
@@ -152,13 +150,12 @@ p{ margin:0 0 1em; max-width:62ch; }
 .selo--online{ border-color:var(--folha); }
 .selo--online::before{ background:var(--folha); }
 
-.palco{ position:relative; max-width:520px; width:100%; justify-self:center; padding:28px 0 56px; }
+.palco{ position:relative; max-width:520px; width:100%; justify-self:center; padding:28px 0 40px; }
 .palco::before{
   content:""; position:absolute; right:0; top:0; bottom:0; width:72%;
   background:var(--terracota); border-radius:999px 999px 10px 10px;
 }
-.palco .principal{ position:relative; width:74%; margin-left:4%; }
-.palco .segunda{ position:absolute; width:38%; right:2%; bottom:0; }
+.palco .principal{ position:relative; width:80%; margin-left:4%; }
 @media (min-width:900px){
   .abertura{ padding-top:24px; }
   .abertura .wrap{ grid-template-columns:1.1fr .9fr; gap:56px; }
@@ -368,16 +365,9 @@ p{ margin:0 0 1em; max-width:62ch; }
       <div class="palco">
         <figure class="principal carta gira-e">
           <picture>
-            <source type="image/webp" srcset="img/marlizete-consultorio-480.webp 480w, img/marlizete-consultorio-960.webp 960w, img/marlizete-consultorio-1400.webp 1400w" sizes="(min-width: 900px) 400px, 72vw">
-            <img src="img/marlizete-consultorio-960.jpg" width="960" height="1440" fetchpriority="high"
-                 alt="Dra. Marlizete sorri sentada numa poltrona de madeira do consultório. Tem cabelo grisalho cacheado, óculos redondos e blusa coral; atrás dela, plantas e a luz da janela.">
-          </picture>
-        </figure>
-        <figure class="segunda carta gira-d">
-          <picture>
-            <source type="image/webp" srcset="img/marlizete-sorriso-480.webp 480w, img/marlizete-sorriso-960.webp 960w" sizes="(min-width: 900px) 200px, 30vw">
-            <img src="img/marlizete-sorriso-480.jpg" width="480" height="480"
-                 alt="Dra. Marlizete sentada no chão, de macacão mostarda e lenço florido, olha para cima e sorri.">
+            <source type="image/webp" srcset="img/marlizete-abertura-343.webp">
+            <img src="img/marlizete-abertura-343.jpg" width="343" height="512" fetchpriority="high"
+                 alt="Dra. Marlizete sorri sentada numa poltrona de madeira do consultório, de mãos entrelaçadas. Tem cabelo grisalho cacheado, óculos redondos, blusa rosé acetinada e colar de pérolas com medalhão; atrás dela, plantas e a luz da janela.">
           </picture>
         </figure>
       </div>
