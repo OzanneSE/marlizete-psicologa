@@ -168,7 +168,10 @@ p{ margin:0 0 1em; max-width:62ch; }
 /* faixa de credenciais */
 .credenciais{ background:var(--cafe); color:var(--linho); padding:36px 0; }
 .credenciais ul{ list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(2, 1fr); gap:26px 20px; }
-@media (min-width:900px){ .credenciais ul{ grid-template-columns:repeat(4, 1fr); gap:0; } .credenciais li + li{ border-left:1px solid rgba(201,154,59,.35); padding-left:28px; } }
+.credenciais b{ white-space:nowrap; }
+.credenciais li:last-child{ grid-column:1 / -1; }
+@media (min-width:900px){ .credenciais ul{ grid-template-columns:repeat(3, 1fr); gap:28px 24px; } .credenciais li:last-child{ grid-column:auto; } }
+@media (min-width:1180px){ .credenciais ul{ grid-template-columns:repeat(5, 1fr); gap:0; } .credenciais li + li{ border-left:1px solid rgba(201,154,59,.35); padding-left:22px; } .credenciais li{ padding-right:12px; } .credenciais b{ font-size:1.9rem; } }
 .credenciais b{ display:block; font-family:var(--serif); font-weight:500; font-size:clamp(1.7rem, 3vw, 2.3rem); line-height:1.05; color:var(--ocre); margin-bottom:6px; }
 .credenciais li > span{ font-size:.95rem; color:#E9DFD0; line-height:1.4; display:block; max-width:22ch; }
 
@@ -332,7 +335,7 @@ p{ margin:0 0 1em; max-width:62ch; }
       <ul>
         <li><a href="#atendimento">Atendimento</a></li>
         <li><a href="#consultorio">Consultório</a></li>
-        <li><a href="#como-trabalho">Como trabalho</a></li>
+        <li><a href="#como-trabalho">Como eu trabalho</a></li>
         <li><a href="#trajetoria">Trajetória</a></li>
         <li><a href="#primeira-conversa">Primeira conversa</a></li>
         <li><a href="#contato">Contato</a></li>
@@ -349,7 +352,7 @@ p{ margin:0 0 1em; max-width:62ch; }
       <div>
         <span class="sobre">Dra. Marlizete Maldonado Vargas</span>
         <h1 id="titulo">Casal, família <em>e&nbsp;adoção.</em></h1>
-        <p class="lead"><strong>Sou psicóloga e psicoterapeuta desde 1981.</strong> Atendo casais e famílias no consultório, em Aracaju, e famílias por adoção online, em todo o Brasil.</p>
+        <p class="lead"><strong>Sou psicóloga e psicoterapeuta desde 1981.</strong> Atendo casais e famílias no consultório, em Aracaju, e também online, em todo o Brasil e no exterior.</p>
         <div class="acoes">
           <a class="btn btn--acao" href="https://wa.me/5579998289847?text=Ol%C3%A1%2C%20Dra.%20Marlizete.%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20sobre%20atendimento." target="_blank" rel="noopener">
             <svg aria-hidden="true"><use href="#balao"/></svg>Conversar pelo WhatsApp
@@ -358,7 +361,7 @@ p{ margin:0 0 1em; max-width:62ch; }
         </div>
         <ul class="selos" aria-label="Modalidades de atendimento">
           <li class="selo">Presencial · Aracaju</li>
-          <li class="selo selo--online">Online · Brasil todo</li>
+          <li class="selo selo--online">Online · Brasil e exterior</li>
         </ul>
       </div>
 
@@ -380,8 +383,9 @@ p{ margin:0 0 1em; max-width:62ch; }
       <ul>
         <li><b>1981</b><span>psicóloga e psicoterapeuta desde então</span></li>
         <li><b>1991</b><span>início do trabalho com adoção</span></li>
-        <li><b>1998</b><span>autora de <span class="livro">Adoção tardia</span>, Casa do Psicólogo</span></li>
-        <li><b>Doutora</b><span>em Psicologia pela PUC-Campinas</span></li>
+        <li><b>1998</b><span>lançamento do meu livro <span class="livro">Adoção tardia</span>, publicado pela Casa do Psicólogo</span></li>
+        <li><b>Doutora</b><span>formada em Psicologia pela Pontifícia Universidade Católica de Campinas (PUC-Campinas)</span></li>
+        <li><b>Pós-doutorado</b><span>em Saúde Coletiva, no México</span></li>
       </ul>
     </div>
   </section>
@@ -426,7 +430,7 @@ p{ margin:0 0 1em; max-width:62ch; }
           <span class="num">02</span>
           <h3 id="t-adocao">Famílias por adoção</h3>
           <span class="selo selo--online">Online · Brasil todo</span>
-          <p>Antes de entrar na fila, durante a espera e depois da chegada do filho.</p>
+          <p>Antes de entrar na fila do processo de adoção, durante a espera e depois da chegada do filho.</p>
           <p>Quem procura por “adoção tardia” me encontra por esse nome. Eu prefiro dizer adoção de crianças maiores: a adoção é necessária, e tardia é um adjetivo que discrimina.</p>
           <p class="remate">Da família sonhada à família possível.</p>
         </div>
@@ -469,7 +473,7 @@ p{ margin:0 0 1em; max-width:62ch; }
         </figure>
       </div>
       <div class="legenda-espaco revela">
-        <p>Há lugar para uma pessoa, para um casal ou para a família inteira, inclusive no chão, entre almofadas.</p>
+        <p>Há lugar para terapia individual, para um casal ou para a família inteira.</p>
         <p><strong>Clinical Center</strong> · Praça da Bandeira, 465, sala 403 · Aracaju (SE)<br><a href="https://www.google.com/maps/search/?api=1&amp;query=Pra%C3%A7a%20da%20Bandeira%2C%20465%2C%20Aracaju%20SE" target="_blank" rel="noopener">Abrir no mapa</a></p>
       </div>
     </div>
@@ -484,7 +488,7 @@ p{ margin:0 0 1em; max-width:62ch; }
           <img src="img/marlizete-cartas-960.jpg" width="960" height="1200" loading="lazy"
                alt="Vista de cima: Dra. Marlizete, de macacão mostarda e lenço florido, sentada no chão, segura uma carta entre dezenas de cartas de colagem espalhadas à sua volta.">
         </picture>
-        <figcaption>Cartas de colagem que eu mesma fiz, à mão.</figcaption>
+        <figcaption>Cartas de colagem que fiz à mão.</figcaption>
       </figure>
 
       <div class="revela">
@@ -520,11 +524,12 @@ p{ margin:0 0 1em; max-width:62ch; }
           <li><span class="ano">1991</span><p>Início do trabalho com adoção, na assessoria técnica ligada ao Juizado da Infância e Juventude de Blumenau (SC).</p></li>
           <li><span class="ano">1993</span><p>Passo a atender famílias.</p></li>
           <li><span class="ano">1994</span><p>Mestrado em Psicologia Clínica pela PUC-Campinas, sobre adoção e o vínculo entre criança e família.</p></li>
-          <li><span class="ano">2000</span><p>Doutorado em Psicologia pela PUC-Campinas. Mais tarde, pós-doutorado em Saúde Coletiva, no México.</p></li>
+          <li><span class="ano">2000</span><p>Doutorado em Psicologia pela PUC-Campinas.</p></li>
+          <li><span class="ano">2013</span><p>Pós-doutorado em Saúde Coletiva na Universidad Autónoma Metropolitana (UAM-Xochimilco), no México.</p></li>
           <li><span class="ano">Hoje</span><p>Aposentada da docência, dedicada à clínica.</p></li>
         </ol>
         <div class="obra">
-          <small>Livro · Casa do Psicólogo, 1998</small>
+          <small>Livro · Editora Casa do Psicólogo, 1998</small>
           <strong>Adoção tardia: da família sonhada à família possível</strong>
           <p>O trabalho é de desidealização.</p>
         </div>
@@ -544,11 +549,11 @@ p{ margin:0 0 1em; max-width:62ch; }
       <ol class="passos revela">
         <li>
           <h3>Você me escreve</h3>
-          <p>Pelo WhatsApp, basta dizer se procura atendimento de casal, de família ou por adoção. Não precisa contar sua história por mensagem; isso fica para a sessão.</p>
+          <p>Pelo WhatsApp, basta dizer se procura atendimento de casal, de família ou por adoção. Não precisa contar sua história por mensagem; deixaremos isso para a primeira sessão.</p>
         </li>
         <li>
           <h3>Combinamos o formato</h3>
-          <p>Presencial, no consultório em Aracaju, ou online, por vídeo.</p>
+          <p>Presencial, no consultório em Aracaju, ou online, por videochamada.</p>
         </li>
         <li>
           <h3>A primeira sessão</h3>
@@ -559,7 +564,7 @@ p{ margin:0 0 1em; max-width:62ch; }
       <div class="faq">
         <div class="revela">
           <svg class="espiral" aria-hidden="true"><use href="#espiral"/></svg>
-          <h3 style="font-size:clamp(1.6rem,2.6vw,2rem);font-weight:500">Perguntas que costumam chegar</h3>
+          <h3 style="font-size:clamp(1.6rem,2.6vw,2rem);font-weight:500">Perguntas frequentes</h3>
         </div>
         <div class="perguntas revela">
           <details>
@@ -575,7 +580,7 @@ p{ margin:0 0 1em; max-width:62ch; }
             <p>Porque a adoção é necessária, e tardia é um adjetivo que discrimina. Uso “adoção tardia” só para que me encontrem por esse nome.</p>
           </details>
           <details>
-            <summary>Quanto custa?</summary>
+            <summary>Qual o valor da sessão?</summary>
             <p>Valores e formas de pagamento são combinados diretamente, pelo WhatsApp.</p>
           </details>
         </div>
